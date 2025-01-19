@@ -1,4 +1,11 @@
 # Builder Pattern for Tests
+```js
+const address = new AddressBuilder().build();
+    expect(address.line1).toBe('123 Default Street');
+    expect(address.city).toBe('Default City');
+    expect(address.state).toBe('DS');
+    expect(address.zipCode).toBe('00000');
+```
 
 ```js
 const address = new AddressBuilder()
