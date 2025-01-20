@@ -1,4 +1,4 @@
-const { Address } = require('./address');
+const { Address } = require('../src/address');
 
 class AddressBuilder {
   constructor() {
