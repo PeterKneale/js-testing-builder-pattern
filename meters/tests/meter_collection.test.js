@@ -20,4 +20,12 @@ describe("MeterCollection Tests", () => {
     expect(activeMeters.length).toBe(1);
     expect(activeMeters[0].status).toBe("A");
   });
+  it("should filter meters by status where none available", () => {
+    const collection = new MeterCollectionBuilder()
+      .withMeters([MeterBuilder.InactiveMeter(), MeterBuilder.InactiveMeter()])
+      .build();
+
+    const activeMeters = collection.findMetersByStatus("A");
+    expect(activeMeters.length).toBe(0);
+  });
 });

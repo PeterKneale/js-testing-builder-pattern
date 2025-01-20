@@ -10,7 +10,9 @@ describe("Meter Calculator Tests", () => {
       .build();
 
     var result = MeterCalculator.calculateTotalAverageDailyByStatus(collection, "A");
-
     expect(result).toBe(3);
+
+    var result2 = MeterCalculator.calculateTotalAverageDailyByStatus(collection, "I");
+    expect(result2).toBe(5);
   });
 });
