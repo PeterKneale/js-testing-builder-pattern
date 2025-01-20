@@ -1,5 +1,5 @@
-const { AddressBuilder } = require('./address-builder');
-const { AddressValidator } = require('../src/address-validator');
+const { AddressBuilder } = require('./address_builder');
+const { AddressValidator } = require('../src/address_validator');
 
 describe('Address Validator Tests', () => {
   

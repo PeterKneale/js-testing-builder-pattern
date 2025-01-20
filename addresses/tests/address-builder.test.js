@@ -1,4 +1,4 @@
-const { AddressBuilder } = require('./address-builder');
+const { AddressBuilder } = require('./address_builder');
 
 describe('Address Builder Tests', () => {
 
