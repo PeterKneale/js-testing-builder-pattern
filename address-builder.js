@@ -9,7 +9,7 @@ class AddressBuilder {
       city: 'Default City',
       state: 'DS',
       country: 'Default Country',
-      zipCode: '00000',
+      zipCode: '12345',
     };
   }
 
@@ -45,6 +45,16 @@ class AddressBuilder {
 
   setZipCode(zipCode) {
     this.address.zipCode = zipCode;
+    return this;
+  }
+  
+  removeZipCode() {
+    delete this.address.zipCode;
+    return this;
+  }
+  
+  removeState() {
+    delete this.address.state;
     return this;
   }
 
