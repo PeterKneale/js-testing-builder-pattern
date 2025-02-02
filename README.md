@@ -1,4 +1,12 @@
+# Install and run
+```sh
+npm install
+npm test
+```
+
 # Builder Pattern for Tests
+
+
 ```js
 const address = new AddressBuilder().build();
     expect(address.line1).toBe('123 Default Street');
